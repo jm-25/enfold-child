@@ -1,0 +1,169 @@
+/* ------------------------------------- */
+/* Page builder custom shortcodes */
+/* ------------------------------------- */
+/* Image Hover */
+/* ------------------------------------- */
+.hover-image {
+  position: relative;
+  overflow: hidden; }
+  .hover-image img {
+    display: block;
+    position: relative;
+    width: 100%; }
+  .hover-image .overlay {
+    position: absolute;
+    background: #333;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
+    .hover-image .overlay .overlay-inner {
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+      text-align: center; }
+      .hover-image .overlay .overlay-inner .heading {
+        color: #f1f1f1;
+        margin-bottom: 5px; }
+        .hover-image .overlay .overlay-inner .heading:hover {
+          color: #ffffff; }
+      .hover-image .overlay .overlay-inner .subheading {
+        color: #cccccc;
+        margin: 0px; }
+  .hover-image .image-overlay {
+    display: none;
+    visibility: hidden; }
+
+a:hover, a:focus, a:visited {
+  text-decoration: none; }
+
+/* ----------------------------------------------- */
+/* Change breakpoint for responsive menu */
+/* ----------------------------------------------- */
+@media only screen and (max-width: 1098px) {
+  .html_mobile_menu_phone .main_menu, .html_mobile_menu_tablet #header_main_alternate {
+    display: none; }
+  .html_mobile_menu_phone .container #advanced_menu_toggle, .html_mobile_menu_tablet #advanced_menu_hide {
+    display: block; }
+  .html_mobile_menu_phone #mobile-advanced {
+    display: block; } }
+
+/* ----------------------------------------------- */
+/* Fonts */
+/* ----------------------------------------------- */
+@font-face {
+  font-family: 'GeosansLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/geo_sans_light/geo_sans_light.eot");
+  src: url("fonts/geo_sans_light/geo_sans_light.eot?#iefix") format("embedded-opentype"), url("fonts/geo_sans_light/geo_sans_light.svg#GeosansLight") format("svg"), url("fonts/geo_sans_light/geo_sans_light.woff") format("woff"), url("fonts/geo_sans_light/geo_sans_light.ttf") format("truetype"); }
+
+body, p, a, span {
+  font-family: 'GeosansLight', sans-serif;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+  font-family: 'GeosansLight', sans-serif;
+  font-weight: normal; }
+
+input, textarea, keygen, select, button {
+  font-family: 'GeosansLight'; }
+
+/* ------------------------------------- */
+/* avia page builder */
+/* ------------------------------------- */
+/* ------------------------------------- */
+/* full width slideshow */
+/* ------------------------------------- */
+#top .avia-layerslider {
+  border: none; }
+
+#top .avia-slideshow-arrows a {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 40px !important;
+  height: 60px !important;
+  border-radius: 7px;
+  margin: -30px 15px 0 !important;
+  opacity: 1 !important; }
+
+#top .av-control-minimal .avia-slideshow-arrows a:before {
+  border: none; }
+
+#top .av_slideshow_full.av-control-default .prev-slide:before,
+#top .av_slideshow_full.av-control-default .next-slide:before {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  line-height: 60px; }
+
+.avia-builder-el-0 .slideshow_inner_caption {
+  padding-top: 0 !important; }
+  .avia-builder-el-0 .slideshow_inner_caption img {
+    width: initial; }
+
+/* ------------------------------------- */
+/* Social Icons */
+/* ------------------------------------- */
+.social_bookmarks {
+  text-align: left !important; }
+  .social_bookmarks li {
+    display: inline-block !important;
+    float: none !important;
+    background: #000000 !important;
+    border-radius: 100%;
+    margin-left: 6px;
+    border: none !important; }
+    .social_bookmarks li:hover {
+      background: transparent !important; }
+      .social_bookmarks li:hover a:before {
+        color: #ffffff; }
+    .social_bookmarks li a {
+      border-radius: 100%; }
+      .social_bookmarks li a:before {
+        color: #fff;
+        font-size: 20px; }
+
+/* ------------------------------------- */
+/* Layout */
+/* ------------------------------------- */
+/* Header */
+/* ------------------------------------- */
+/* nav */
+/* ------------------------------------- */
+/* footer */
+/* ------------------------------------- */
+/* ------------------------------------- */
+/*Widgets */
+/* ------------------------------------- */
+/* Social Bookmarks */
+#footer .social_bookmarks {
+  text-align: left !important;
+  margin-bottom: 25px !important; }
+  #footer .social_bookmarks li {
+    background-color: #DEC987 !important; }
+    #footer .social_bookmarks li a:before {
+      color: #000; }
+  #footer .social_bookmarks .social_icon_1 {
+    margin-left: 0px; }
+
+/* Horizontal Menu */
+.footer-socket-content #socket {
+  background-image: none;
+  background: transparent !important; }
+
+.horizontal-menu #socket .menu-item-top-level-1 {
+  padding-left: 0px !important; }
+
+.horizontal-menu #socket nav.sub_menu_socket {
+  width: 100%;
+  margin-bottom: 25px;
+  float: left;
+  font-size: 14px;
+  text-transform: uppercase; }
+  .horizontal-menu #socket nav.sub_menu_socket ul {
+    margin-left: 0px; }
+  .horizontal-menu #socket nav.sub_menu_socket a {
+    font-size: 14px;
+    line-height: 16px; }
+
+/* ------------------------------------- */
+/* Custom Styles */
+/* ------------------------------------- */

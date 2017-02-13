@@ -1,0 +1,182 @@
+$background: #ffffff;
+$primary-color: #000000;
+$secondary-color: #DEC987;
+
+@import 'avia';
+
+
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+/* Change breakpoint for responsive menu */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 1098px) {
+.html_mobile_menu_phone .main_menu , .html_mobile_menu_tablet #header_main_alternate{display:none;}
+.html_mobile_menu_phone .container #advanced_menu_toggle, .html_mobile_menu_tablet #advanced_menu_hide{display:block;}
+.html_mobile_menu_phone #mobile-advanced{display:block;}
+}
+
+/* ----------------------------------------------- */
+/* Fonts */
+/* ----------------------------------------------- */
+
+@font-face { 
+	font-family: 'GeosansLight'; 
+	font-style: normal;
+	font-weight: normal;	
+	src: 	url('fonts/geo_sans_light/geo_sans_light.eot'); 
+	src: 	url('fonts/geo_sans_light/geo_sans_light.eot?#iefix') format('embedded-opentype'), 
+				url('fonts/geo_sans_light/geo_sans_light.svg#GeosansLight') format('svg'), 
+				url('fonts/geo_sans_light/geo_sans_light.woff') format('woff'), 
+				url('fonts/geo_sans_light/geo_sans_light.ttf') format('truetype'); 
+}
+
+body, p, a, span {
+  font-family:'GeosansLight', sans-serif;
+  font-weight:normal; 
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8{
+  font-family:'GeosansLight', sans-serif;
+  font-weight:normal; 
+}
+
+
+input, textarea, keygen, select, button {
+	font-family: 'GeosansLight';
+}
+
+/* ------------------------------------- */
+/* avia page builder */
+/* ------------------------------------- */
+
+
+
+/* ------------------------------------- */
+/* full width slideshow */
+/* ------------------------------------- */
+#top .avia-layerslider{
+	border: none;
+}
+#top .avia-slideshow-arrows a {
+  background-color: rgba(0,0,0,0.7);
+  width: 40px !important;
+  height: 60px !important;
+  border-radius: 7px;
+  margin: -30px 15px 0 !important;
+	opacity: 1 !important;
+}
+#top .av-control-minimal .avia-slideshow-arrows a:before {
+  border: none;
+}
+#top .av_slideshow_full.av-control-default .prev-slide:before,
+#top .av_slideshow_full.av-control-default .next-slide:before {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    line-height: 60px;
+}
+
+.avia-builder-el-0 .slideshow_inner_caption{
+	padding-top: 0 !important;
+	img{
+		width: initial;
+	}
+}
+
+/* ------------------------------------- */
+/* Social Icons */
+/* ------------------------------------- */
+.social_bookmarks {
+	text-align: left !important;
+	li {
+		display: inline-block !important;
+		float: none !important;
+	  background: $primary-color !important;
+		border-radius: 100%;
+		margin-left: 6px;
+		border: none !important;
+		&:hover{
+			background: transparent !important;
+			a:before{
+				color:#ffffff;
+			}
+		}
+		a{
+			border-radius: 100%;
+			&:before{
+				color:#fff;
+				font-size: 20px;
+			}			
+		}
+	}	
+}
+
+/* ------------------------------------- */
+/* Layout */
+/* ------------------------------------- */
+
+
+/* Header */
+/* ------------------------------------- */
+
+/* nav */
+/* ------------------------------------- */
+
+/* footer */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/*Widgets */
+/* ------------------------------------- */
+/* Social Bookmarks */
+#footer .social_bookmarks {
+    text-align: left !important;
+    margin-bottom: 25px !important;
+		li{
+			background-color: $secondary-color !important;
+			a:before{
+				color: #000;
+			}
+		}    
+    .social_icon_1{
+	    margin-left: 0px;
+    }   
+}
+
+
+/* Horizontal Menu */
+.footer-socket-content #socket{
+	background-image: none;
+	background: transparent !important;
+}
+
+.horizontal-menu #socket{
+	.menu-item-top-level-1 {
+    padding-left: 0px !important;
+	}
+	nav.sub_menu_socket{
+		width: 100%;
+		margin-bottom: 25px;
+		float: left;
+		font-size: 14px;
+		text-transform: uppercase;
+		ul{
+			 margin-left: 0px;
+		}
+		a{
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+}	
+
+
+
+
+
+/* ------------------------------------- */
+/* Custom Styles */
+/* ------------------------------------- */
