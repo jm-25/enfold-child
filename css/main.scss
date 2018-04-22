@@ -3,6 +3,7 @@ $primary-color: #000000;
 $secondary-color: #DEC987;
 
 @import 'avia';
+@import 'widgets';
 
 
 a:hover, a:focus, a:visited {
@@ -13,16 +14,26 @@ a:hover, a:focus, a:visited {
 /* Change breakpoint for responsive menu */
 /* ----------------------------------------------- */
 
-@media only screen and (max-width: 1098px) {
-.html_mobile_menu_phone .main_menu , .html_mobile_menu_tablet #header_main_alternate{display:none;}
-.html_mobile_menu_phone .container #advanced_menu_toggle, .html_mobile_menu_tablet #advanced_menu_hide{display:block;}
-.html_mobile_menu_phone #mobile-advanced{display:block;}
+/*
+@media only screen and (min-width: 767px) and (max-width: 1086px) {
+	.html_mobile_menu_phone .main_menu , .html_mobile_menu_tablet #header_main_alternate{display:none;}
+	.html_mobile_menu_phone .container #advanced_menu_toggle, .html_mobile_menu_tablet #advanced_menu_hide{display:block;}
+	.html_mobile_menu_phone #mobile-advanced{display:block;}
+	//new mobile
+	.responsive .av-burger-menu-main{display: block;}
+	.responsive #top #wrap_all .main_menu{top:0; height:80px; left:auto; right:0; display: block; position: absolute;}
+	.responsive #top .av-main-nav .menu-item{display:none;}
+	.responsive #top .av-main-nav .menu-item-avia-special{display:block;}
+	.responsive #header_main_alternate{display:none;}
+	.responsive .main_menu ul:first-child > li > a {position: absolute; top: 59px;  right: -50px;}	
 }
+*/
 
 /* ----------------------------------------------- */
 /* Fonts */
 /* ----------------------------------------------- */
 
+/*
 @font-face { 
 	font-family: 'GeosansLight'; 
 	font-style: normal;
@@ -48,6 +59,7 @@ h1, h2, h3, h4, h5, h6, h7, h8{
 input, textarea, keygen, select, button {
 	font-family: 'GeosansLight';
 }
+*/
 
 /* ------------------------------------- */
 /* avia page builder */
