@@ -33,41 +33,129 @@
     display: none;
     visibility: hidden; }
 
+/* Social Bookmarks */
+#footer .social_bookmarks {
+  text-align: left !important;
+  margin-bottom: 25px !important; }
+  #footer .social_bookmarks li {
+    background-color: #DEC987 !important; }
+    #footer .social_bookmarks li a:before {
+      color: #000; }
+  #footer .social_bookmarks .social_icon_1 {
+    margin-left: 0px; }
+
+/* Horizontal Menu Expanded */
+/*
+.horizontal-menu-expanded{
+	.menu{
+		display: table;
+		width: 100%;
+		box-sizing: 
+		> .menu-item {
+			display: table-cell;
+		}
+		.sub-menu{
+			list-style: none;
+			margin-left: 0;
+		}
+	}
+}
+*/
+.horizontal-menu-expanded .menu {
+  text-align: center;
+  margin: 0 auto; }
+  .horizontal-menu-expanded .menu a:hover {
+    text-decoration: underline; }
+  .horizontal-menu-expanded .menu > .menu-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px; }
+  .horizontal-menu-expanded .menu .sub-menu {
+    display: none;
+    line-height: 1; }
+
+@media only screen and (min-width: 900px) {
+  .horizontal-menu-expanded .menu {
+    max-width: 90%;
+    text-align: left;
+    display: flex; }
+    .horizontal-menu-expanded .menu > .menu-item {
+      flex: 1 1 auto; }
+    .horizontal-menu-expanded .menu .sub-menu {
+      display: block;
+      list-style: none;
+      margin-left: 0; } }
+
+/* Horizontal Menu */
+.footer-socket-content #socket {
+  background-image: none;
+  background: transparent !important; }
+
+.horizontal-menu #socket .menu-item-top-level-1 {
+  padding-left: 0px !important; }
+
+.horizontal-menu #socket nav.sub_menu_socket {
+  width: 100%;
+  margin-bottom: 25px;
+  float: left;
+  font-size: 14px;
+  text-transform: uppercase; }
+  .horizontal-menu #socket nav.sub_menu_socket ul {
+    margin-left: 0px; }
+  .horizontal-menu #socket nav.sub_menu_socket a {
+    font-size: 14px;
+    line-height: 16px; }
+
 a:hover, a:focus, a:visited {
   text-decoration: none; }
 
 /* ----------------------------------------------- */
 /* Change breakpoint for responsive menu */
 /* ----------------------------------------------- */
-@media only screen and (max-width: 1098px) {
-  .html_mobile_menu_phone .main_menu, .html_mobile_menu_tablet #header_main_alternate {
-    display: none; }
-  .html_mobile_menu_phone .container #advanced_menu_toggle, .html_mobile_menu_tablet #advanced_menu_hide {
-    display: block; }
-  .html_mobile_menu_phone #mobile-advanced {
-    display: block; } }
-
+/*
+@media only screen and (min-width: 767px) and (max-width: 1086px) {
+	.html_mobile_menu_phone .main_menu , .html_mobile_menu_tablet #header_main_alternate{display:none;}
+	.html_mobile_menu_phone .container #advanced_menu_toggle, .html_mobile_menu_tablet #advanced_menu_hide{display:block;}
+	.html_mobile_menu_phone #mobile-advanced{display:block;}
+	//new mobile
+	.responsive .av-burger-menu-main{display: block;}
+	.responsive #top #wrap_all .main_menu{top:0; height:80px; left:auto; right:0; display: block; position: absolute;}
+	.responsive #top .av-main-nav .menu-item{display:none;}
+	.responsive #top .av-main-nav .menu-item-avia-special{display:block;}
+	.responsive #header_main_alternate{display:none;}
+	.responsive .main_menu ul:first-child > li > a {position: absolute; top: 59px;  right: -50px;}	
+}
+*/
 /* ----------------------------------------------- */
 /* Fonts */
 /* ----------------------------------------------- */
-@font-face {
-  font-family: 'GeosansLight';
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/geo_sans_light/geo_sans_light.eot");
-  src: url("fonts/geo_sans_light/geo_sans_light.eot?#iefix") format("embedded-opentype"), url("fonts/geo_sans_light/geo_sans_light.svg#GeosansLight") format("svg"), url("fonts/geo_sans_light/geo_sans_light.woff") format("woff"), url("fonts/geo_sans_light/geo_sans_light.ttf") format("truetype"); }
+/*
+@font-face { 
+	font-family: 'GeosansLight'; 
+	font-style: normal;
+	font-weight: normal;	
+	src: 	url('fonts/geo_sans_light/geo_sans_light.eot'); 
+	src: 	url('fonts/geo_sans_light/geo_sans_light.eot?#iefix') format('embedded-opentype'), 
+				url('fonts/geo_sans_light/geo_sans_light.svg#GeosansLight') format('svg'), 
+				url('fonts/geo_sans_light/geo_sans_light.woff') format('woff'), 
+				url('fonts/geo_sans_light/geo_sans_light.ttf') format('truetype'); 
+}
 
 body, p, a, span {
-  font-family: 'GeosansLight', sans-serif;
-  font-weight: normal; }
+  font-family:'GeosansLight', sans-serif;
+  font-weight:normal; 
+}
 
-h1, h2, h3, h4, h5, h6, h7, h8 {
-  font-family: 'GeosansLight', sans-serif;
-  font-weight: normal; }
+h1, h2, h3, h4, h5, h6, h7, h8{
+  font-family:'GeosansLight', sans-serif;
+  font-weight:normal; 
+}
+
 
 input, textarea, keygen, select, button {
-  font-family: 'GeosansLight'; }
-
+	font-family: 'GeosansLight';
+}
+*/
 /* ------------------------------------- */
 /* avia page builder */
 /* ------------------------------------- */
