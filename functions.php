@@ -174,7 +174,6 @@ function social_icons_register() {register_widget('Social_Icons');}
 /**
  * Horizontal Menu.
  */	
- 
 class Horizontal_Menu extends WP_Widget {
 	 
 	//process the new widget
@@ -225,24 +224,63 @@ class Horizontal_Menu extends WP_Widget {
 	}
  
 }
- 
-add_action('widgets_init', 'footer_social_register');
- 
 //Register the widget
+function register_horizontal_menu() {register_widget('Horizontal_Menu');}		 
+add_action('widgets_init', 'register_horizontal_menu');
 
-function footer_social_register() {register_widget('Horizontal_Menu');}		
+/**
+ * Horizontal Menu Expanded.
+ */	 
+class Horizontal_Menu_Expanded extends WP_Widget {
+	 
+	//process the new widget
+	public function __construct() {
+		$option = array(
+		'classname' => 'horizontal_menu_expanded',
+		'description' => 'Display Theme Footer Menu with submenus 2 levels'
+		);
+		$this->WP_Widget('Horizontal_Menu_Expanded', 'Horizontal Menu Expanded', $option);
+	}
+	 
+	//build the widget settings form
+	function form($instance) {
+		echo 'Select Footer Menu in Appearance/Menus';
+	}
+	 
+	//save the widget settings
+	function update($new_instance, $old_instance) { 
+		return $old_instance;
+	}
+	 
+	//display the widget
+	function widget($args, $instance) {
+		  
+    $avia_theme_location = 'avia3';
+    $avia_menu_class = $avia_theme_location . '-menu';
 
+    $args = array(
+        'theme_location'=>$avia_theme_location,
+        'menu_id' =>$avia_menu_class,
+        'container_class' =>$avia_menu_class,
+        'fallback_cb' => '',
+        'depth'=>2,
+        'echo' => false,
+        //'walker' => new avia_responsive_mega_menu(array('megamenu'=>'disabled'))
+    );
+	
+	  $menu = wp_nav_menu($args);
+	  
+	  if($menu){ 
+	  	echo "<div class='horizontal-menu-expanded'>";
+		  echo 	"<nav class=''".avia_markup_helper(array('context' => 'nav', 'echo' => false)).">";
+		  echo 		$menu;
+		  echo 	"</nav>";
+		  echo '</div>';
+		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
+	}
+ 
+}
+//Register the widget
+function register_horizontal_menu_expanded() {register_widget('Horizontal_Menu_Expanded');}		
+add_action('widgets_init', 'register_horizontal_menu_expanded');
